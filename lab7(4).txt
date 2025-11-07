@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+ void checkEvenOdd(int n){
+     if(n%2==0)
+       cout << n <<" is Even" << endl;
+     else
+       cout << n <<" is Odd" << endl;
+ }
+void line(){
+    cout<<"---------------------------------------------------------------\n";
+}
+int main(){
+     int num;
+    int run = 1;
+    while(run==1){
+        cout << "Enter a number: ";
+        cin >> num;
+       checkEvenOdd(num);
+       cout<<"Enter \n1. Rerun\n0. Exit ";
+       cin>> run;
+       line();
+    }
+
+    return 0;
+}
